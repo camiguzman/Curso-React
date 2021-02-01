@@ -1,33 +1,39 @@
 import './styles.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCartPlus} from '@fortawesome/free-solid-svg-icons';
+import CartWidget from './CartWidget';
 
 const NavbarComponent = () => {
     return (
         <>
-        <h3  style= {{color:'red', fontSize: '29px'}}>Bernardita.</h3>
+        <h3  style= {{color:'blue', fontSize: '29px', display:'flex', justifyContent:'center', left:'10px'}}>Bernardita.</h3>
         <nav> 
-            <ul  style= {{display:'flex', justifyContent: 'center', listStyle: 'none', fontSize: '21px'}}>
+            <ul  style= {{display:'flex', justifyContent: 'center', listStyle: 'none', fontSize: '15px'}}>
                 <li >
-                    <a href="#" className="pepe">Cafes</a>
-                </li>
-                <li  >
-                    <a href="#" className="pepe">Maquinas</a>
+                    <a href="#" className="pepe">CAFES</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >Capsulas</a>
+                    <a href="#" className="pepe">MAQUINAS</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >Gustos</a>
+                    <a href="#" className="pepe" >CAPSULAS</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >Compras</a>
+                    <a href="#" className="pepe" >GUSTOS</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >Rebajas</a>
+                    <a href="#" className="pepe" >COMPRAS</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >Vasos</a>
+                    <a href="#" className="pepe" >REBAJAS</a>
                 </li>
-            </ul>
+                <li>
+                    <a href="#" className="pepe" >VASOS</a>
+                </li> 
+                <li>
+                <CartWidget/>     
+                </li> 
+                </ul>
         </nav>
     </>    
     );
