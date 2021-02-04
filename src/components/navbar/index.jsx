@@ -2,39 +2,45 @@ import './styles.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCartPlus} from '@fortawesome/free-solid-svg-icons';
 import CartWidget from './CartWidget';
+import { useState } from 'react';
 
 const NavbarComponent = () => {
+   
     return (
         <>
-        <h3  style= {{color:'blue', fontSize: '29px', display:'flex', justifyContent:'center', left:'10px'}}>Bernardita.</h3>
+       
+        <h3  style= {{color:'black', fontSize: '29px', display:'flex', justifyContent:'center', left:'10px'}}>Glossier.</h3>
         <nav> 
             <ul  style= {{display:'flex', justifyContent: 'center', listStyle: 'none', fontSize: '15px'}}>
                 <li >
-                    <a href="#" className="pepe">CAFES</a>
+                    <a href="#" className="pepe">Fragancias</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe">MAQUINAS</a>
+                    <a href="#" className="pepe">Body</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >CAPSULAS</a>
+                    <a href="#" className="pepe" >EndlessWEAR</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >GUSTOS</a>
+                    <a href="#" className="pepe" >Make Up</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >COMPRAS</a>
+                    <a href="#" className="pepe" >Rebajas</a>
                 </li>
                 <li>
-                    <a href="#" className="pepe" >REBAJAS</a>
+                    <a href="#" className="pepe" >Contact</a>
                 </li>
                 <li>
                     <a href="#" className="pepe" >VASOS</a>
                 </li> 
                 <li>
-                <CartWidget/>     
+                <CartWidget/> 
+                
+                        
                 </li> 
                 </ul>
         </nav>
+        
     </>    
     );
 }

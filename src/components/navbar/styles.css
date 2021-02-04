@@ -1,12 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
 * {
 text-decoration: none;
-font-family: 'Josefin Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
 box-sizing: border-box;
 }
 .pepe{
     color:black;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0 10px;    
-    font-weight: Light 300 italic;
+    font-weight: bold;
 }
+/* ITEM LIST CONTAINER*/
+.container{
+    margin:0 50px;
+  }
+  .cont{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .img{
+    width: 31%;
+    margin: 0 6px;
+  }
+  .container__title{
+    position: relative;
+      font-size: 27px;
+      font-style: italic;
+      right: 2rem;
+      top: 4rem;
+      font-weight: 300;
+  }
+  .container__title h1{
+    font-weight: 500;
+  }
+  .meme{
+    width: 60%;
+      margin-left: 96px;
+      font-size: 19px;
+  }
+  .btn-primary{
+    background: none;
+    margin: 20px;
+    padding: 20px 40px;
+    font-size: 27px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border:1px solid black;
+    cursor:pointer;
+  }
+  .landing{
+    padding:67px 58px 70px 62px;
+      background-color:#FDF1FA; 
+  }
+  .landing_uno{
+    width:58%;
+  }
+  .landing_uno h2{
+    margin-bottom: 10px;
+      font-family: 'Source Serif Pro', serif;
+      font-size: 45px;
+      font-family: none;
+  }
+
+  /**CARTS **/
+  .compras__cont{
+  margin: 57px;
+}
+.compras__cont_pack{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 0 13rem;
+}
+.compras__cont_uno{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 31px;
+}
+.compras__cont_uno h3{
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.producto{
+  width:250px;
+}
+.addcart{
+  padding:10px;
+  box-shadow: white;
+  font-family:'Noto Sans KR', sans-serif; 
+  background-color: white;
+  font-weight: 900;
+  cursor: pointer;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
