@@ -2,13 +2,17 @@ import  React,  {useState} from 'react';
 
 const ItemCount = () => {
     const [count, setCount] = useState(1);
-   
+    const stock = 10; // Despues esto lo vas a reemplazxar por datos reales de firebase.
     const increment =() => {
-        setCount(count +1 )
+        if (count < stock) {
+            setCount(count +1 )
+        }
     };
     
     const decrement = () => {
-        setCount(count -1 )
+        if (count > 1) {
+            setCount(count -1 )
+        }
     }   
     return (
         <>
